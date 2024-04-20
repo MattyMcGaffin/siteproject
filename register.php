@@ -81,15 +81,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Register an account</title>
-    <link rel="stylesheet" href="style.css"></link>
+    <header>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="stylesheet.css"></link>
 </head>
 <body>
-<div class="topnav">
-        <a class="active" href="index.php">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+<nav>
+      <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="librarypage.php">Games Library</a></li>
+        <li><a href="newspage.php">News Page</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+</header>
 
 <?php
 if (!isset($_SESSION['user_id']))

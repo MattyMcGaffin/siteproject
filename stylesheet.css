@@ -6,9 +6,10 @@ body, h1, h2, h3, p, ul, li {
   
   /* Style the header */
   header {
+    background-image: url('headergif1resize.gif');
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 50px;
   }
   
   header h1 {
@@ -90,10 +91,10 @@ body, h1, h2, h3, p, ul, li {
     
   }
 
-  body {
+ body {
     
-    background-image: url('backgroundlanding.gif');
-    background-size: cover;
+    background-image: url('blackhole.gif');
+    background-size:contain;
     
     
     
@@ -102,10 +103,11 @@ body, h1, h2, h3, p, ul, li {
     margin:0;
 }
 
- .headernews
+ /**.headernews
  {
-  background-image: url('headergif1.gif');
+  background-image: url('headergif1resize.gif');
   background-color: #333;
   color: #fff;
-  padding: 400px;
- }
+  padding: 100px;
+  
+ }**/

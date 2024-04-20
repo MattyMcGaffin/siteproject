@@ -74,15 +74,20 @@ if (isset($_GET['logout']))
 <!DOCTYPE html>
 <html>
 <head>
+    <header>
     <title>Login Page</title>
-    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="stylesheet.css"></link>
 </head>
 <body>
-<div class="topnav">
-        <a class="active" href="index.php">Home</a>
-        <a href="newspage.php">News</a>
-        <a href="#contact">Contact</a>
-        <a href="librarypage.php">Library</a>
+<nav>
+      <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="librarypage.php">Games Library</a></li>
+        <li><a href="newspage.php">News Page</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+</header>
 
 <?php
 if (!isset($_SESSION['user_id']))
