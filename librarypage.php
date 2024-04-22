@@ -6,14 +6,12 @@
         <style>H1 {text-align: center};</style>
         <H1>Available Games</H1>
         <nav>
-           <ul>
-           <li><a href="index.php">Home</a></li>
-            <li><a href="librarypage.php">Games Library</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul>
+           <li><a href="index.php" class="btnhome">Home</a></li>
+            <li><a href="librarypage.php" class="btnlib">Games Library</a></li>
+            <li><a href="newspage.php" class="btnnews">News Page</a></li>
+            <li><a href="contact.php" class="btncon">Contact</a></li>
 
-
-            <div class="libbackground"></div>
             <link rel="stylesheet" href="stylesheet.css">
            </ul>
 

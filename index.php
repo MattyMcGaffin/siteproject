@@ -16,19 +16,22 @@
 
     <nav>
       <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="librarypage.php">Games Library</a></li>
-        <li><a href="newspage.php">News Page</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.php" class="btnhome">Home</a></li>
+        <li><a href="librarypage.php" class="btnlib">Games Library</a></li>
+        <li><a href="newspage.php" class="btnnews">News Page</a></li>
+        <li><a href="contact.php" class="btncon">Contact</a></li>
       </ul>
     </nav>
     <div>
         <a href="login.php" class="btnlog">Login</a>
         <a href="register.php" class="btnreg">Register</a>
       </div>
+
+    </div>
   </header>
 
-  <section class="features">
+  <div class="foreground">
+    <section class="features">
     <h2>Features (to be filled)</h2>
     <div class="feature">
       <h3>Feature 1</h3>
@@ -42,7 +45,10 @@
       <h3>Feature 3</h3>
       <p>Description of feature 3 goes here.</p>
     </div>
+    
   </section>
+
+
 
   <footer>
     <p>&copy; 2024 The Gaff Man. All rights reserved.</p>
