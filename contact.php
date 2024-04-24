@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Contact Us</title>
+</head>
 <body>
-    <header>
+
+<header>
 
 
     <style>
@@ -29,6 +32,33 @@
     </header>
 
 
+<div class="container">
+  <style>
+    h2{text-align:center};
+  </style>
+  <h2 style="background-color:white;">Contact Us</h2>
+  <form action="/submit_form" method="post">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Your email">
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
 </body>
-</head>
 </html>
+
+
+
+
+
+
