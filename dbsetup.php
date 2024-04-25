@@ -15,6 +15,8 @@
 
 	// create the database for the application
 	$sql_create_db = "CREATE DATABASE IF NOT EXISTS gamesdb"; 
+	$connection->query($sql_create_db);
+
 	
 	// select database
 	$connection->select_db("gamesdb");
@@ -27,7 +29,7 @@
         email VARCHAR(100) NOT NULL,
         password VARCHAR(100) NOT NULL
     )";
-
+	$connection->query($sql);
 
     // create a table in the selected database
 	// specifies three fields: ID, name and email
@@ -38,6 +40,7 @@
         description TEXT,
         image_path VARCHAR(255) NOT NULL
     )";
+	$connection->query($sql);
 
 
 	
