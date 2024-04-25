@@ -52,6 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['username'] = $user['username'];
+        $_SESSION['upload_error'] = false;
         header("Location: index.php"); // Redirect to dashboard after successful login
         exit();
     } 
@@ -74,6 +75,7 @@ if (isset($_GET['logout']))
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap">
     <header>
     <style>H1 {text-align: center};</style>
         <H1>Login</H1>
@@ -91,19 +93,11 @@ if (isset($_GET['logout']))
     </nav>
 </header>
 
-<?php
-if (!isset($_SESSION['user_id']))
-{
-    echo("<a href='login.php'>Login</a>");
-}
-else
-{
-    echo("<a href='logout.php'>Log out</a>");
-}
 
-?>
+
+
     </div>
-    
+    <div class="container">
     <form method="post" action="">
         <label>Username:</label><br>
         <input type="text" name="username"><br>
@@ -111,9 +105,11 @@ else
         <input type="password" name="password"><br>
         <input type="submit" value="Login">
     </form>
+    </div>
     <div>
     <h2>No account? <a href="register.php">Register</a></h2>
     </div>
     <?php if (isset($login_error)) echo "<p>$login_error</p>"; ?>
+
 </body>
 </html>

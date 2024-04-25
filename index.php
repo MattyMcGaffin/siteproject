@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap">
 
 
 
@@ -29,6 +29,7 @@
     <div>
         <a href="login.php" class="btnlog">Login</a>
         <a href="register.php" class="btnreg">Register</a>
+        <a href="logout.php" class="btnlogout">Logout</a>
       </div>
 
     </div>

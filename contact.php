@@ -2,6 +2,8 @@
 <html>
 <head>
 <title>Contact Us</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap">
 </head>
 <body>
 
@@ -36,7 +38,7 @@
   <style>
     h2{text-align:center};
   </style>
-  <h2 style="background-color:white;">Contact Us</h2>
+  <h2>Contact Us</h2>
   <form action="/submit_form" method="post">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">

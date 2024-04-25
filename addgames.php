@@ -109,26 +109,18 @@ else
 <html>
 <head>
     <title>Register an account</title>
-    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="stylesheet.css"></link>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap">
 </head>
 <body>
 <div class="topnav">
-        <a href="index.php">Home</a>
-        <a href="#news">News</a>
-        <a class="active" href="librarypage.php">Games</a>
-        <a href="#contact">Contact</a>
+<li><a href="index.php" class="btnhome">Home</a></li>
+        <li><a href="librarypage.php" class="btnlib">Games Library</a></li>
+        <li><a href="newspage.php" class="btnnews">News Page</a></li>
+        <li><a href="contact.php" class="btncon">Contact</a></li>
 
-<?php
-if (!isset($_SESSION['user_id']))
-{
-    echo("<a href='login.php'>Login</a>");
-}
-else
-{
-    echo("<a href='logout.php'>Log out</a>");
-}
 
-?>
     </div>
     
     <div>
@@ -142,7 +134,7 @@ else
 
         <form method="post" action=""  enctype="multipart/form-data">
             <label for="title">Title:</label><br>
-            <input type="text" name="title" required><br>
+            <input type="text" name="title" required class="font";><br>
 
             <label for="description">Description:</label>
             <textarea name="description" id="description" rows="3" required></textarea>
@@ -154,5 +146,16 @@ else
 
         </form>
     </div>
+<?php
+ if (!isset($_SESSION['user_id']))
+{
+    echo("<a href='login.php'>Login</a>");
+}
+else
+{
+    echo("<a href='logout.php'>Log out</a>");
+}
+
+?>
 </body>
 </html>

@@ -35,6 +35,7 @@ function get_games()
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap">
 <body>
     <header>
         <style>H1 {text-align: center};</style>
@@ -52,6 +53,7 @@ function get_games()
            <div>
         <a href="login.php" class="btnlog">Login</a>
         <a href="register.php" class="btnreg">Register</a>
+        <a href="logout.php" class="btnlogout">Logout</a>
       </div>
         </nav>
     </header>
@@ -74,7 +76,7 @@ else
     </div>
     
     <div>
-        <a href="addgame.php">New game</a>
+        <a href="addgames.php">New game</a>
     </div>
 
 

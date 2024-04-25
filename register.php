@@ -24,7 +24,7 @@ function hashPassword($password)
     return password_hash($password, PASSWORD_DEFAULT);
 }
 
-function createUser($username, $password) 
+function createUser($username, $email, $password) 
 {
     // Database connection
     $host = "localhost";
@@ -44,8 +44,8 @@ function createUser($username, $password)
 
     $hashed_password = hashPassword($password);
 
-    $stmt = $connection->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
-    $stmt->bind_param("ss", $username, $hashed_password);
+    $stmt = $connection->prepare("INSERT INTO users (username, email, password) VALUES (?,?,?)");
+    $stmt->bind_param("sss", $username,$email,$hashed_password);
 
     if ($stmt->execute()) 
     {
@@ -65,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $email = $_POST['email'];
 
     // Create user account
-    if (createUser($username, $password)) 
+    if (createUser($username, $email, $password)) 
     {
         header("Location: login.php");
         exit();
@@ -81,6 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap">
     <header>
     <style>H1 {text-align: center};</style>
         <H1>Register</H1>
@@ -110,7 +111,7 @@ else
 
 ?>
     </div>
-    
+    <div class="container">
     <form method="post" action="">
         <label>Username:</label><br>
         <input type="text" name="username"><br>
@@ -122,5 +123,6 @@ else
         <input type="submit" value="Register">
 
     </form>
+</div>
 </body>
 </html>
