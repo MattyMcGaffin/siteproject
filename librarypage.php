@@ -63,20 +63,12 @@ function get_games()
 
 
 <?php
-if (!isset($_SESSION['user_id']))
-{
-    echo("<a href='login.php'>Login</a>");
-}
-else
-{
-    echo("<a href='logout.php'>Log out</a>");
-}
 
 ?>
     </div>
     
     <div>
-        <a href="addgames.php">New game</a>
+        <a href="addgames.php" class="btnaddgame">New game</a>
     </div>
 
 
@@ -86,7 +78,8 @@ $dbgames = get_games();
 
 if ($dbgames->num_rows == 0)
 {
-    echo("<p>No games have been added, yet.</p>"); 
+    echo("<br><br><br><p>Oh no!<br>
+    no games have been added :( hit the button to get started!</p>"); 
 }    
 else
 {
@@ -118,6 +111,7 @@ else
     }
 
 }
+
 
 
 

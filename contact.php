@@ -29,6 +29,7 @@
            <div>
         <a href="login.php" class="btnlog">Login</a>
         <a href="register.php" class="btnreg">Register</a>
+        <a href="logout.php" class="btnlogout">Logout</a>
             </div>
      </nav>
     </header>

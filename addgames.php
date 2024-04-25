@@ -108,20 +108,31 @@ else
 <!DOCTYPE html>
 <html>
 <head>
+
     <title>Register an account</title>
     <link rel="stylesheet" href="stylesheet.css"></link>
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap">
-</head>
-<body>
-<div class="topnav">
-<li><a href="index.php" class="btnhome">Home</a></li>
+<header>
+    <div class="header">
+    <ul>
+        <li><a href="index.php" class="btnhome">Home</a></li>
         <li><a href="librarypage.php" class="btnlib">Games Library</a></li>
         <li><a href="newspage.php" class="btnnews">News Page</a></li>
         <li><a href="contact.php" class="btncon">Contact</a></li>
 
 
+        <div>
+        <a href="login.php" class="btnlog">Login</a>
+        <a href="register.php" class="btnreg">Register</a>
+        <a href="logout.php" class="btnlogout">Logout</a>
+      </div>
+    </ul>
+</header>
+   
     </div>
+</head>
+<body>
+
     
     <div>
 
@@ -131,7 +142,7 @@ else
         echo("<p>There was an error uploading the game.</p>");
     }
 ?>
-
+<div class="container">
         <form method="post" action=""  enctype="multipart/form-data">
             <label for="title">Title:</label><br>
             <input type="text" name="title" required class="font";><br>
@@ -146,16 +157,5 @@ else
 
         </form>
     </div>
-<?php
- if (!isset($_SESSION['user_id']))
-{
-    echo("<a href='login.php'>Login</a>");
-}
-else
-{
-    echo("<a href='logout.php'>Log out</a>");
-}
-
-?>
 </body>
 </html>

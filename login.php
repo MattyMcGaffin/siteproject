@@ -24,7 +24,7 @@ function authenticateUser($username, $password)
     }
 
     $stmt = $connection->prepare("SELECT * FROM users WHERE username = ?");
-    $stmt->bind_param("s", $username);
+    $stmt->bind_param("s", $dbusername);
     $stmt->execute();
     $result = $stmt->get_result();
 
@@ -32,7 +32,7 @@ function authenticateUser($username, $password)
     {
         $user = $result->fetch_assoc();
 
-        if (password_verify($password, $user['password'])) 
+        if (password_verify($dbpassword, $user['password'])) 
         {
             return $user;
         }
@@ -104,10 +104,10 @@ if (isset($_GET['logout']))
         <label>Password:</label><br>
         <input type="password" name="password"><br>
         <input type="submit" value="Login">
-    </form>
-    </div>
-    <div>
+        <div>
     <h2>No account? <a href="register.php">Register</a></h2>
+    </div>
+    </form>
     </div>
     <?php if (isset($login_error)) echo "<p>$login_error</p>"; ?>
 

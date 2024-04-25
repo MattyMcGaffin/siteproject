@@ -100,14 +100,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 </header>
 
 <?php
-if (!isset($_SESSION['user_id']))
-{
-    echo("<a href='login.php'>Login</a>");
-}
-else
-{
-    echo("<a href='logout.php'>Log out</a>");
-}
+
 
 ?>
     </div>
