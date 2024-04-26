@@ -1,3 +1,9 @@
+<?php
+// Start the session
+session_start();
+
+include "dbsetup.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
