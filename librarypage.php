@@ -35,11 +35,13 @@ function get_games()
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Games Library</title>
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap">
 <body>
     <header>
         <style>H1 {text-align: center};</style>
-        <H1>Available Games</H1>
+        <H1> <span class="highlight">Available Games</span></H1>
         <nav>
           <ul>
            <li><a href="index.php" class="btnhome">Home</a></li>

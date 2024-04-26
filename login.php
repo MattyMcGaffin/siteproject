@@ -75,10 +75,11 @@ if (isset($_GET['logout']))
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="icon" type="image/x-icon" href="favicon.jpg">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap">
     <header>
     <style>H1 {text-align: center};</style>
-        <H1>Login</H1>
+        <H1><span class="highlight">Login</span></H1>
     <title>Login Page</title>
     <link rel="stylesheet" href="stylesheet.css"></link>
 </head>

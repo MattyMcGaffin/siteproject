@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Contact Us</title>
-
+<link rel="icon" type="image/x-icon" href="favicon.jpg">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap">
 </head>
 <body>
@@ -14,7 +14,7 @@
       h1 {text-align: center};
     </style>
 
-    <h1>Contact Us</h1>
+    <h1><span class="highlight">Contact Us</span></h1>
         <div class="headernews"></div>
         <link rel="stylesheet" href="stylesheet.css">
 

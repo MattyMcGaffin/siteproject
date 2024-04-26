@@ -8,15 +8,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
+  <link rel="icon" type="image/x-icon" href="favicon.jpg">
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
   <header>
     <style>
       h1 {text-align: center};
+      
     </style>
 
-    <h1>SERCsync Gamers Hub</h1>
+    <h1><span class="highlight">SERCsync Gamers Hub</span></h1>
 
     <nav>
       <ul>
@@ -53,7 +55,11 @@
     
   </section>
 
-
+  <div class="pacman">
+  <div class="pacman__eye"></div>
+  <div class="pacman__mouth"></div>
+  <div class="pacman__food"></div>
+</div>
 
   <footer>
     <p>&copy; 2024 The Gaff Man. All rights reserved.</p>
