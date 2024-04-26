@@ -78,8 +78,8 @@ $dbgames = get_games();
 
 if ($dbgames->num_rows == 0)
 {
-    echo("<br><br><br><p>Oh no!<br>
-    no games have been added :( hit the button to get started!</p>"); 
+    echo("<br><br><br><h2>Oh no!<br>
+    no games have been added :( hit the button to get started!</h2>"); 
 }    
 else
 {

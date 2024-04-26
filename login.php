@@ -24,7 +24,7 @@ function authenticateUser($username, $password)
     }
 
     $stmt = $connection->prepare("SELECT * FROM users WHERE username = ?");
-    $stmt->bind_param("s", $dbusername);
+    $stmt->bind_param("s", $username);
     $stmt->execute();
     $result = $stmt->get_result();
 
@@ -32,7 +32,7 @@ function authenticateUser($username, $password)
     {
         $user = $result->fetch_assoc();
 
-        if (password_verify($dbpassword, $user['password'])) 
+        if (password_verify($password, $user['password'])) 
         {
             return $user;
         }

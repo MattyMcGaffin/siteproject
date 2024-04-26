@@ -6,11 +6,11 @@ include "dbsetup.php";
 
 // Database connection
 $host = "localhost";
-$username = "root";
+$dbusername = "root";
 $dbpassword = "";
 $db = "gamesdb";
 
-$connection = new mysqli($host, $username, $dbpassword, $db);
+$connection = new mysqli($host, $dbusername, $dbpassword, $db);
 
 // Check connection
 if ($connection->connect_error) 

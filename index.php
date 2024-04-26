@@ -37,7 +37,7 @@
 
   <div class="foreground">
     <section class="features">
-    <h2>Features (to be filled)</h2>
+    <h2>Welcome to SERCsync Game Hub</h2>
     <div class="feature">
       <h3>Feature 1</h3>
       <p>Description of feature 1 goes here.</p>
