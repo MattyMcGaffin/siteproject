@@ -230,7 +230,7 @@ body, h1, h2, h3, p, ul, li
   text-align: center;
 }
 input[type=text], input[type=email],input[type=password], textarea {
-  width: 600px;
+  width: 500px;
   padding: 12px;
   margin: 8px 0;
   display: inline-block;
