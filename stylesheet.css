@@ -400,3 +400,18 @@ input[type=submit]:hover {
   }
 }
 
+.loginnotif
+{
+  position: absolute;
+  top:100px;
+  right:850px;
+
+  
+  padding: 0.5em 0;
+  background: #3d2c9b;
+  color:#ffffff;
+  box-shadow: .5em 0 0 #3d2c9b, -.5em 0 0 #3d2c9b;
+  border-radius: 10px;
+  
+}
+

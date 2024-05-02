@@ -1,7 +1,8 @@
 <?php
 session_start();
 
-include "dbsetup.php";<?php
+include "dbsetup.php";
+
 
 
 session_start();

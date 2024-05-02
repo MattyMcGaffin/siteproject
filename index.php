@@ -27,6 +27,20 @@ include "dbsetup.php";
 
     <h1><span class="highlight">SERCsync Gamers Hub</span></h1>
 
+    <?php
+
+    if (!isset($_SESSION['username']))
+    {
+      echo("<div class='loginnotif'>Welcome, guest gamer. </div>");
+    }
+      else
+    {
+    echo("<div class='loginnotif'>Welcome, " .  $_SESSION['username'] . "</div>");
+    }
+
+
+    ?>
+
     <nav>
       <ul>
         <li><a href="index.php" class="btnhome">Home</a></li>
@@ -47,6 +61,7 @@ include "dbsetup.php";
   <div class="foreground">
     <section class="features">
     <h2>Welcome to SERCsync Game Hub</h2>
+    <p>There are many things to see here, have fun and explore!</p>
     <div class="feature">
       <h3>Feature 1</h3>
       <p>Description of feature 1 goes here.</p>
@@ -73,4 +88,6 @@ include "dbsetup.php";
   </footer>
 </body>
 </html>
+
+
 
