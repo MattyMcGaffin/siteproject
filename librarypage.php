@@ -91,7 +91,7 @@ else
 
     while($row = $dbgames->fetch_assoc())
     {
-        if ($count % 4 == 0)
+        if ($count % 5 == 0)
         {
             echo("<div class='row'>");
         }

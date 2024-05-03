@@ -28,11 +28,7 @@ include "dbsetup.php";
 
     <h1><span class="highlight">SERCsync Gamers Hub</span></h1>
 
-    
-
-    <nav>
-      <ul>
-        <?php
+    <?php
           if (!isset($_SESSION['username']))
           {
             echo("<div class='loginnotif'>Welcome, guest gamer. </div>");
@@ -42,6 +38,10 @@ include "dbsetup.php";
           echo("<div class='loginnotif'>Welcome, " .  $_SESSION['username'] . "</div>");
           }
         ?>
+    
+
+    <nav>
+      <ul>
         <li><a href="index.php" class="btnhome">Home</a></li>
         <li><a href="librarypage.php" class="btnlib">Games Library</a></li>
         <li><a href="newspage.php" class="btnnews">News Page</a></li>
@@ -62,30 +62,30 @@ include "dbsetup.php";
     <h2>Welcome to SERCsync Game Hub</h2>
     <p>There are many things to see here, have fun and explore!</p>
     <div class="feature">
-      <h3>Feature 1</h3>
-      <p>Description of feature 1 goes here.</p>
+      <h3>Features!</h3>
+      <p>This website is a database for all of your favourite games, news of the games and more!</p><br>
     </div>
     <div class="feature">
-      <h3>Feature 2</h3>
+      <h3>Whats hot! Hit the buttons below to see :)</h3>
       
       <div class ="sildeshow-container">
 
         <div class = "mySlides fade">
         <div class="numbertext">1/3"</div>
         <img src="img1.jpg" style="width:50%">
-        <div class="text">Caption Text</div>
+        <div class="text">Fallout 4</div>
         </div>
 
         <div class = "mySlides fade">
         <div class="numbertext">2/3"</div>
-        <img src="img1.jpg" style="width:50%">
-        <div class="text">Caption Two</div>
+        <img src="img2.jpg" style="width:50%">
+        <div class="text">Cyberpunk 2077</div>
         </div>
 
         <div class = "mySlides fade">
         <div class="numbertext">3/3"</div>
-        <img src="img1.jpg" style="width:50%">
-        <div class="text">Caption Three</div>
+        <img src="img3.jpg" style="width:50%">
+        <div class="text">Elden Ring</div>
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -99,14 +99,7 @@ include "dbsetup.php";
       <span class="dot" onclick="currentSlide(3)"></span>
       </div>
 
-        
 
-    </div>
-    <div class="feature">
-      <h3>Feature 3</h3>
-      <p>Description of feature 3 goes here.</p>
-    </div>
-    
   </section>
 
   <div class="pacman">

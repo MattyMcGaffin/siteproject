@@ -39,7 +39,40 @@ include "dbsetup.php";
         <a href="logout.php" class="btnlogout">Logout</a>
             </div>
         </nav>
+
+        
     </header>
+
+<h1>Welcome to SERCsync Gaming News Hub!
+
+Stay up-to-date with the latest buzz, updates, and happenings in the gaming world right here. Our dedicated team of gaming enthusiasts scours the internet to bring you the freshest news, reviews, and insights from the gaming industry.</h1><br><br>
+
+<h2>Recent News<h2>
+
+1. Cyberpunk 2077 Patch 1.3 Released: What's New?
+
+Dive into the details of the latest patch for Cyberpunk 2077, including bug fixes, performance improvements, and new features.<br><br>
+2. Last of Us part 2 Showcase Recap: Exciting Reveals and Trailers
+
+Missed the The Last Of Us part 2 Showcase event? Catch up on all the announcements, trailers, and gameplay reveals from Naughty Dogs latest event.<br><br>
+3. Fortnite Season 8: What's in Store for Players?
+
+Get ready to explore a new chapter in Fortnite with Season 8! Learn about the latest map changes, Battle Pass rewards, and gameplay updates.<br><br>
+
+<h2>Editor's Picks<h2><br><br>
+
+
+1. Elden Ring Review: FromSoftware's Latest Masterpiece
+
+Read our in-depth review of Elden Ring, the highly anticipated action RPG from the creators of Dark Souls, and find out if it lives up to the hype.<br><br>
+
+2. Deathloop: A Mind-Bending Thrill Ride
+
+Dive into the world of Deathloop and discover why this time-looping adventure from Arkane Studios is a must-play for fans of immersive storytelling and innovative gameplay.
+Interviews<br><br>
+
+
+<h2>Stay Connected!</h2>
 
 
 </body>
