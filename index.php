@@ -20,6 +20,7 @@ include "dbsetup.php";
 </head>
 <body>
   <header>
+    <script src="carousel.js" type="text/javascript"></script>
     <style>
       h1 {text-align: center};
       
@@ -27,22 +28,20 @@ include "dbsetup.php";
 
     <h1><span class="highlight">SERCsync Gamers Hub</span></h1>
 
-    <?php
-
-    if (!isset($_SESSION['username']))
-    {
-      echo("<div class='loginnotif'>Welcome, guest gamer. </div>");
-    }
-      else
-    {
-    echo("<div class='loginnotif'>Welcome, " .  $_SESSION['username'] . "</div>");
-    }
-
-
-    ?>
+    
 
     <nav>
       <ul>
+        <?php
+          if (!isset($_SESSION['username']))
+          {
+            echo("<div class='loginnotif'>Welcome, guest gamer. </div>");
+          }
+            else
+          {
+          echo("<div class='loginnotif'>Welcome, " .  $_SESSION['username'] . "</div>");
+          }
+        ?>
         <li><a href="index.php" class="btnhome">Home</a></li>
         <li><a href="librarypage.php" class="btnlib">Games Library</a></li>
         <li><a href="newspage.php" class="btnnews">News Page</a></li>
@@ -68,7 +67,40 @@ include "dbsetup.php";
     </div>
     <div class="feature">
       <h3>Feature 2</h3>
-      <p>Description of feature 2 goes here.</p>
+      
+      <div class ="sildeshow-container">
+
+        <div class = "mySlides fade">
+        <div class="numbertext">1/3"</div>
+        <img src="img1.jpg" style="width:50%">
+        <div class="text">Caption Text</div>
+        </div>
+
+        <div class = "mySlides fade">
+        <div class="numbertext">2/3"</div>
+        <img src="img1.jpg" style="width:50%">
+        <div class="text">Caption Two</div>
+        </div>
+
+        <div class = "mySlides fade">
+        <div class="numbertext">3/3"</div>
+        <img src="img1.jpg" style="width:50%">
+        <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="prev" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+        
+
     </div>
     <div class="feature">
       <h3>Feature 3</h3>
